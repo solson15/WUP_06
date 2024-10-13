@@ -106,4 +106,4 @@ in the fisher XY test all the P-values were different and are all very low. the 
 
 # Discussion and Conclusion
 
-<!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
+In this branch the visual graphs were very similar to the 2nd branches graphs. The ratios are similarly close to one another in the branches. The slight difference would be the other category. Its ratio is a little higher in the 2nd branch. All p values for the fisherXY test came back significantly which is different to that of the 2nd.
