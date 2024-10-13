@@ -85,4 +85,5 @@ all P-value shows for the comparison of white and black is 0.00001741, the p-val
 
 # Discussion and Conclusion
 
-<!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
+in this branch the visual graphs were very similar to the master branches graph. the only visual difference was that here were more people in the master branch. this branches ratio are also the fisherXY test in the inferential results. In this branch there was only on significant p value and that's for the whites and blacks ratio 
+
