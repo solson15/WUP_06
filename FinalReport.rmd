@@ -33,6 +33,14 @@ If not, then whose view differs from whom??
 # Methods
 
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method. Discuss what data manipulations may be needed for example subsetting or other binning procedures and what sort of graphical displays and inferential tools will be used!-->
+```{r}
+favor <- filter (mydata, cappun == "f")
+```
+```{r}
+oppose <- filter (mydata, cappun == "O")
+```
+
+
 
 # Results
 
@@ -41,14 +49,24 @@ If not, then whose view differs from whom??
 ## Descriptive Results
 
 ### Graphical Descriptive Results
+```{r}
+barchartGC(~race + cappun,data=mydata, type="percent")
+```
 
 <!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question. Bottom line is to explain the features of the graph that are relevant to conforming or departing to what is expected by your null hypothesis !-->
 
+In the ggplot the the attitude of the white race is mostly in favor. The black attitudes are towards
+opposition. The blue bar is more than half of the white opposition. 
+
+
+```{r}
+dd3 <- mydata %>% group_by(cappun,race) %>% summarize(count=n()) %>% mutate(prcnt=count/sum(count))
 
 
 ## Now with The Most data (fewer variables gives more data points)
 
-
+basicC <- ggplot(dd3,aes(x=Seat,y=count,fill=Sex))
+basicC + geom_bar(stat="identity",position="dodge")
 
 ### Numerical Descriptive Results
 
