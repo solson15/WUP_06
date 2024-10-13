@@ -96,6 +96,12 @@ the P value is 0.00000000000000022 which is very low. so i am going to run a fis
 
 
 ## More data version
+```{r}
+fisherXY(mydata$race,mydata$cappun)
+```
+
+in the fisher XY test all the P-values were different and are all very low. the p value for white and other is 0.002607. the p value for black and other is 0.001564. 
+
 
 
 # Discussion and Conclusion
