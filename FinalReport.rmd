@@ -54,8 +54,14 @@ the blacks are the most in opposition. The whites are the most in favor. the oth
 
 ### Numerical Descriptive Results
 
-<!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
+```{r}
+table2 <- xtabs(~cappun + race, data=mydata)
+rowPerc(table2)
+colPerc(table2)
+```
+
+the white group is in favor with a 2:1 ratio, the black group are slightly against it, and the other group is against cappun by around 3:2. 
 
 
 
